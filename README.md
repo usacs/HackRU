@@ -1,2 +1,2 @@
-#FUCK ALL THE BITCHES
+#I see how this game works.
 ====================
