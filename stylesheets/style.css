@@ -1,0 +1,9 @@
+
+body {
+  background: url(../images/shattered.png);
+}
+
+.opaque {
+  background: rgba(243, 243, 243, 0.35);
+  border: none;
+}
