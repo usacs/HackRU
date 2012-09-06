@@ -31,12 +31,17 @@ div.package.panel {
   white-space: pre;
 }
 
+#logo a {
+  color: #000;
+}
+
 #tagline {
   text-align: center;
 }
 
 .button {
-  margin-bottom: 5px;
+  display: block;
+  margin-bottom: 5px !important;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
