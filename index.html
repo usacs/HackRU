@@ -17,6 +17,9 @@ __  __  ______  ______  __  __    ______  __  __
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <script src="javascripts/modernizr.foundation.js"></script>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvmtHUyTq-a94840YKY3KQxx-rEBFdePk&sensor=true">
+    </script>
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -29,8 +32,19 @@ __  __  ______  ______  __  __    ______  __  __
       </h2>
       <p class="subheader" id="tagline">An incredible experience for learning and creation</p>
     </div>
+    <?php include 'nav.php' ?>
     <div class="row shadow">
       <div class="row panel opaque">
+        <div class="row">
+          <div class="seven columns push-two nav_color">
+            <ul class="nav-bar right">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="directions.html">Directions</a></li>
+            <li><a href="sponsors.html">Sponsors</a></li>
+            <li><a href="#">Photos</a></li>
+          </ul>
+          </div>
+        </div>
         <div class="six columns">
           <div class="packages">
             <div class="package panel">
@@ -43,67 +57,39 @@ __  __  ______  ______  __  __    ______  __  __
         </div>
         <div class="six columns">
           <h3>Details</h3>
-          <h4>When is it?</h4>
-          Saturday, October 13th 2:00pm to Sunday, October 14th 3:00pm
-          <h4>Where is it?</h4>
-          <a href="https://maps.google.com/maps?q=Douglass+Campus+Center,+100+George+Street,+New+Brunswick+Nj&amp;hl=en&amp;sll=40.516183,-74.341702&amp;sspn=1.265335,2.315369&amp;t=h&amp;hq=Douglass+Campus+Center,&amp;hnear=100+George+St,+New+Brunswick,+New+Jersey+08901&amp;z=15">
-            Trayes Hall, Douglass Campus Center<br>
-            100 George Street, New Brunswick NJ
-          </a>
-          <a id="getting-thee" href="/directions.html"><h4>How do I get there? </h4></a>
+          <h5>When is it?</h5>
+          Saturday, March 30th 2:00pm to Sunday, March 31st 3:00pm
+          <h5>Where is it</h5>
+          <a href="https://maps.google.com/maps/ms?msid=201181184546367058920.0004d5f513540526c3d84&msa=0&ll=40.479059,-74.428736&spn=0.007769,0.017906">
+          Cook Campus Center - 59 Biel Road, New Brunswick, NJ</a>
+          <hr>
+          <div class="center-align">
+          <a id="getting-there" href="directions.html">
+            <img id="maps" src="images/maps-icon.png"/><h5>Travel Information </h5></a>
+          </div>
+          <hr>
           <h4>What should I do?</h4>
-          <div class="row">
-            <div class="twelve columns">
-              <a href="http://hackru2012.eventbrite.com/" class=" large success button">Sign Up for HackRU</a>
-            </div>
-					</div>
 					<div class="row">
             <div class="twelve columns">
               <a href="http://www.hackerleague.org/hackathons/hackru-fall-2012" class=" large success button">Join HackRU on HackerLeague</a>
             </div>
           </div>
+          <br>
           <div class="row">
             <div class="twelve columns">
               <a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Flocalhost%3A8888%2F&amp;related=ru_usacs&amp;source=tweetbutton&amp;text=I'm%20attending%20%23HackRU%20at%20Rutgers%20on%20October%2013th.%20It's%20going%20to%20be%20awesome!&amp;url=http://hackru.org/&amp;via=ru_usacs" class="large button" target="_blank">Tweet About HackRU</a>
             </div>
           </div>
-          <div class="row">
-            <div class="twelve columns">
-              <a href="http://www.facebook.com/sharer.php?u=http://hackru.org" class="large button" target="_blank">Share HackRU on Facebook</a>
-            </div>
-          </div>
         </div>
-        <div class="six columns" align="center">
-          <em>For parties who wish to support HackRU, take a look at our <a href="./sponsors.html">sponsorship packages</a>!</em>
-          </div>
-
-
+        <hr>
+        <div class="twelve columns" align="center">
+            <em>For parties who wish to support HackRU, take a look at our <a href="./sponsors.html">sponsorship packages</a>!</em>
+            <br/>
+        </div>  
         <div class="twelve columns sponsors">
-          <h3>Many thanks to our sponsors:</h3>
-            <img src="./images/logos/10gen.png" alt="10gen" />
-            <img src="./images/logos/ssi_health.png" alt="SSI Health" />
-            <img src="./images/logos/ssi_loan.png" alt="SSI Loans" />
-            <img src="./images/logos/temboo.png" alt="Temboo" />
-            <img src="./images/logos/refinery29.png" alt="Refinery29" />
-            <img src="./images/logos/yahoo.png" alt="Yahoo" />
-            <img src="./images/logos/codecademy.png" alt="Codeacademy" />
-            <img id="masheryLogo" src="./images/logos/masheryLogo.png" alt="Mashery" />
-            <img src="./images/logos/andressen_horowitz.png" alt="Andreseen Horowitz" />
-            <img src="./images/logos/sendgrid.png" alt="Sendgrid" />
-            <img src="./images/logos/twilio.png" alt="Twilio" />
-            
-
-            
-            <img src="./images/logos/thrillist.png" alt="Thrillist" />
-            <img src="./images/logos/localwisdom.png" alt="Local Wisdom" />
-            <img src="./images/logos/github.png" alt="Github" />
-            <img src="./images/logos/credit_suisse.png" alt="Credit Suisse" />
-
+          <h3></h3>
         </div><!-- sponsors -->
         </div>
-
-
-
     </div>
     <script src="javascripts/foundation.min.js"></script>
     <script src="javascripts/app.js"></script>
