@@ -64,7 +64,7 @@ div.package.panel {
 	text-align: center;
 }
 
-#maps{
+#maps {
   width:15%;
   height:15%;
 }
@@ -73,10 +73,30 @@ div.package.panel {
 	margin-top: 0px;
 }
 
-.nav_color ul li a:hover{
+.nav_color ul li a:hover {
   background-color: #D41D29;
 }
 
 .nav_color ul li{
   background-color: #323131;
+}
+
+.viewer {
+	padding-right: 5px;
+	padding-left: 5px;
+	text-align: center;
+}
+
+.viewer img {
+	box-shadow: 2px 2px 1px #888;
+}
+
+.thumbnails {
+	padding: 3px;
+	text-align: justify;
+}
+
+.thumbnails img {
+	margin: 2px;
+	box-shadow: 2px 2px 1px #888;
 }
