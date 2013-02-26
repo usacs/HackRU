@@ -55,10 +55,13 @@ div.package.panel {
   box-shadow: none;
 }
 
-
 .sponsors img{
   margin: 10px 30px;
   vertical-align: middle;
+}
+
+.hosted {
+	text-align: center;
 }
 
 #maps{
