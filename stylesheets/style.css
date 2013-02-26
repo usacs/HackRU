@@ -87,10 +87,6 @@ div.package.panel {
 	text-align: center;
 }
 
-.viewer img {
-	box-shadow: 2px 2px 1px #888;
-}
-
 .thumbnails {
 	padding: 3px;
 	text-align: justify;
