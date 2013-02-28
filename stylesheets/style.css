@@ -77,3 +77,8 @@ div.package.panel {
 .nav_color ul li{
   background-color: #323131;
 }
+
+.homer {
+  border-color:#323131;
+  border:10px solid;
+}
