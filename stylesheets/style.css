@@ -77,17 +77,12 @@ div.package.panel {
 	margin-top: 0px;
 }
 
-.nav_color_container {
-  text-align: center;
-}
-
-.six2, .row .six2 { width: 55.1%; }
-.nav_color ul li a:hover {
-  background-color: #D41D29;
-}
-
-.nav_color ul li{
-  background-color: #323131;
+.nav-bar > li {
+  border: none !important;
+  border-right: none !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
 }
 
 .viewer {
