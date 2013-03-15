@@ -1,18 +1,8 @@
-How to make headers in markdown
-===============================
+Issues
+======
 
-When trying to get the effect of an h1 in markdown tag, there are two easy ways to go about it:
-
-* Put a '\#' character in front of the line
-* Have the line below contain '=' characters matching the number of characters in the line above
-
-
-#Please don't do this:
-    #I see how this game works.
-    ====================
-
-
-/troll
-
-
-P.S: Use YpVr= in Vim to create the matching number of equal signs. Map that to a key if you'd like.
+1. There's no issues page for this repo. Fix that.
+2. Why are we not using some templating language? Hell, even plain PHP would've 
+been fine. I see an include statement, but don't see the file.
+3. Foundation grids are not being used properly.
+4. I want to burn this with fire and rebuild it gloriously.
