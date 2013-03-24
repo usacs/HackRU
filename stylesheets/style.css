@@ -59,6 +59,10 @@ div.package.panel {
   background-color: rgb(206, 102, 53);
 }
 
+.eventbrite-button:hover {
+	background-color: rgb(170, 82, 23);
+}
+
 .sponsors img{
   margin: 10px 30px;
   vertical-align: middle;
