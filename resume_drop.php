@@ -40,7 +40,8 @@
 
       file_put_contents($file_path, $file_contents);
 
-      if(move_uploaded_file($FILES['resume']['tmp_name'], $resume_path)) {
+
+      if(move_uploaded_file($_FILES['resume']['tmp_name'], $resume_path)) {
 
       }
       else {
