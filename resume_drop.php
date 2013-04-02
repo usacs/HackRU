@@ -31,7 +31,7 @@
       $file_contents .= "Project Description: $description\n";
 
       $filename = basename($email);
-      $upload_dir = "uploads";
+      $upload_dir = "/var/www/servers/hackru.org/uploads";
 
       $file_path = $upload_dir.'/'.$filename.'.txt';
 
@@ -68,7 +68,7 @@ __  __  ______  ______  __  __    ______  __  __
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
 
-    <title>hackru - an incredible opportunity for learning and creation</title>
+		<title>HackRU - An incredible opportunity for learning and creation</title>
 
     <link rel="stylesheet" href="stylesheets/foundation.min.css">
     <link rel="stylesheet" href="stylesheets/style.css">
