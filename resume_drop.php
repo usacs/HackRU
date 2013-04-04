@@ -107,7 +107,7 @@ __  __  ______  ______  __  __    ______  __  __
           <p> Filling this form will send your resume to our sponsors. </p>
           <ul>
             <?php foreach($errors as $error): ?>
-              <li> <?= $error; ?>
+              <li> <?= $error; ?> </li>
             <?php endforeach; ?>
           </ul>
           <form action="resume_drop.php" enctype="multipart/form-data" method="POST">
