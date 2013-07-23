@@ -1,3 +1,11 @@
+How to Contribute
+=================
+If you would like to contribute to the site, please follow these steps:
+
+1. Comment on/make a new issue with the work you are planning to do. This helps to keep everyone on the same page.
+2. type type type.
+3. Submit a pull request so that your work can be reviewed. Make sure your changes merge cleanly into master!
+
 How to make headers in markdown
 ===============================
 
