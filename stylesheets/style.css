@@ -113,3 +113,7 @@ div.package.panel {
 	margin: 2px;
 	box-shadow: 2px 2px 1px #888;
 }
+
+div ul {
+    margin-left: 10px;
+}
