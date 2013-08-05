@@ -117,3 +117,8 @@ div.package.panel {
 div ul {
     margin-left: 10px;
 }
+
+div.flavortext em {
+    color: rgb(180, 0, 0);
+    font-style: normal;
+}
