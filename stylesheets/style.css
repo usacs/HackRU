@@ -122,3 +122,11 @@ div.flavortext em {
     color: rgb(180, 0, 0);
     font-style: normal;
 }
+
+#sponsor_img {
+	padding-top: 20px;
+}
+
+.inactive {
+	display: none;
+}
