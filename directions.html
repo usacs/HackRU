@@ -17,11 +17,36 @@ __  __  ______  ______  __  __    ______  __  __
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <script src="javascripts/modernizr.foundation.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script>
+      function initialize() {
+        var myLatLng = new google.maps.LatLng(40.48472, -74.43659);
+        var map_canvas = document.getElementById('map_canvas');
+        var map_options = {
+          center: myLatLng,
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+        var map = new google.maps.Map(map_canvas, map_options);
+
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map
+        });
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
     <!--[if lt ie 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <style>
+      #map_canvas {
+        width: 100%;
+        height: 400px;
+      }
+    </style>
   </head>
-
   <body>
     <div class="row">
       <h2 id="logo">
@@ -42,21 +67,29 @@ __  __  ______  ______  __  __    ______  __  __
               <li><a href="prizes.html">Prizes</a></li>
             </ul>
           </div>
-      </div>
-      <div class="twelve columns">
-        <h1>Getting to HackRU<h1>
-                <p>Coming soon!</p>
-      </div>
-        <div class="twelve columns" style="display:none;">
-          <h1>Getting to HackRU</h1>
-          <p>Below, you will find directions to get to HackRU.<br>
-          HackRU is being held at:
-          <address> 
-            <strong>Douglass Campus Center</strong><br>
-            100 George Street<br>
-            New Brunswick, NJ 08901<br>
-          </address>
-          </p>
+        </div>
+        <!--<div class="twelve columns">-->
+          <!--<h1>getting to hackru<h1>-->
+                  <!--<p>coming soon!</p>-->
+        <!--</div>-->
+        <div class="twelve columns">
+          <div class="row">
+            <div class="six columns">
+              <h1>Getting to HackRU</h1>
+              <p>Below, you will find directions to get to HackRU.<br>
+              HackRU is being held at:
+              <address> 
+                <strong><a href="https://maps.google.com/maps?q=Douglass+campus+center&hl=en&ll=40.484723,-74.436589&spn=0.00519,0.011362&sll=40.429213,-74.420785&sspn=0.166212,0.363579&t=h&hnear=Douglass+Campus+Center,+New+Brunswick,+New+Jersey+08901&z=17&iwloc=A">
+                Douglass Campus Center</a></strong> (DCC)<br>
+                100 George Street<br>
+                New Brunswick, NJ 08901<br>
+              </address>
+              </p>
+            </div>
+            <div class="six columns">
+              <div id="map_canvas"></div>
+            </div>
+          </div>
 
           <hr>
           <h2>Getting there from outside Rutgers</h2>
@@ -66,25 +99,27 @@ __  __  ______  ______  __  __    ______  __  __
           <p>If you're taking public transportation to HackRU, you will want to arrive at the <a href="http://en.wikipedia.org/wiki/New_Brunswick_(NJT_station)">New Brunswick Station</a>. This is on the <a href="http://www.njtransit.com/rg/rg_servlet.srv?hdnPageAction=LineDetailsTo&amp;selLine=NEC">Northeast Corridor Line for NJTransit</a>, and connects to New York Penn Station and <a href="http://www.njtransit.com/rg/rg_servlet.srv?hdnPageAction=TrainStationLookupFrom&selStation=148">Trenton Transit Center</a>.</p>
           <p>From Philadelphia, you will want to take the SEPTA over to Trenton Transit Center, and the Northeast Corridor Line to the New Brunswick Station.</p>
 
-          <p> Once you're at the New Brunswick Station, you can take the <b>Weekend 2</b> Rutgers bus from the train station to Biel Road. We will also have several organizers driving around the area before the start of the hackathon (1:30&ndash;1:45pm), so you can give us a call at <a href="tel:+17327980483">(732)-798-0483</a> and we'll be happy to drive you over.</p>
+          <p> Once you're at the New Brunswick Station, you can take the <b>Weekend 2</b> Rutgers bus from the train station to Cabaret Theater stop. From   the Cabaret Theater, the DCC is right across the street with the entrance on the left.</p>
 
           <hr>
           <h3> Driving &amp; Parking </h3>
 
-          <p> If you're driving to HackRU, you can park in lots 99C and 99D. They will be marked off by <em> Event Parking </em> signs.</p> Parking locations will also be on the below map.
+          <p> If you're driving to HackRU, you can park in lot 70. They will be marked off by <em> Event Parking </em> signs.</p> 
+
+          Parking locations will also be on the below map.
 
           <hr>
           <h2> Getting there from within Rutgers </h2>
-          <p> <strong> Livingston Campus: </strong> You will want to take the Weekend 1 to Biel Road Stop on C/D campus.</p>
-          <p> <strong> Busch Campus: </strong> Take either the Weekend 1 or Weekend 2 to Biel Road on Douglass. Make sure you leave early. </p>
-          <p> <strong> College Ave Campus: </strong> Take the Weekend 1 to Biel Road. </p>
+          <p> <strong> Livingston Campus: </strong> You will want to take the Weekend 1 to the Cabaret Theater stop on C/D campus.</p>
+          <p> <strong> Busch Campus: </strong> Take either the Weekend 1 or Weekend 2 to the Cabaret Theater stop. Make sure you leave early. </p>
+          <p> <strong> College Ave Campus: </strong> Take the Weekend 1 to the Cabaret Theater stop.</p>
           <p> <strong> Cook/Douglass Campus: </strong> Walk to the DCC. </p>
 
-          <p>Once you get to the Biel Road stop, walk down Biel Road street and you'll see the campus center behind some trees to the right.</p>
+          <p>Once you get to the Cabaret Theater stop, the DCC is right across the street with the entrance on the left.</p>
 
-          <p> Below, you will find a Google Map that marks these locations. If you are lost on the day of the event, please call <a href="tel:+17327980483">(732)-798-0483</a>. You can also email rutgersusacs<span style="display:none">null</span>@gmail.com, if you have any additional questions.</p>
-          <!-- add map centered on DCC-->
+          <p>If you are lost on the day of the event, please call <a href="tel:+17327980483">(732)-798-0483</a>. You can also email rutgersusacs<span style="display:none">null</span>@gmail.com, if you have any additional questions.</p>
           <!-- add link to larger map centered on DCC -->
+          <!-- add map centered on DCC-->
         </div>
       </div>
     </div>
