@@ -64,7 +64,8 @@ div.package.panel {
 }
 
 .sponsors img{
-  margin: 10px 25px;
+  width: 100%;
+  margin: 10px 0px;
   vertical-align: middle;
 }
 
